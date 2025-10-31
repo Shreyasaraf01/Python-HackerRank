@@ -1,0 +1,11 @@
+import re
+
+if __name__ == '__main__':
+    s = input()
+
+    # Check for each condition using regex patterns
+    print(bool(re.search(r'[A-Za-z0-9]', s)))  # Alphanumeric
+    print(bool(re.search(r'[A-Za-z]', s)))     # Alphabetical
+    print(bool(re.search(r'[0-9]', s)))        # Digits
+    print(bool(re.search(r'[a-z]', s)))        # Lowercase
+    print(bool(re.search(r'[A-Z]', s)))        # Uppercase
